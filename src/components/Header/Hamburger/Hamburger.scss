@@ -1,0 +1,32 @@
+@import "../../../sass/main.scss";
+
+.hamburger-button {
+  @include flexCenter(column);
+  align-self: center;
+  cursor: pointer;
+  gap: 7px;
+  height: 25px;
+
+  span {
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: white;
+    transform-origin: 1px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &.open {
+    > span:first-child {
+      transform: rotate(45deg);
+    }
+
+    > span:nth-child(2) {
+      opacity: 0;
+    }
+
+    > span:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}
