@@ -2,11 +2,11 @@
 
 header {
   width: 100vw;
-  height: 10vh;
+  height: 8vh;
   display: flex;
   background-color: $primaryColor;
   font-size: 0.75rem;
-  padding: 0 50px;
+  padding: 0 30px;
 
   .nav {
     @include flexCenter(row);
@@ -36,6 +36,12 @@ header {
       &:hover::after {
         opacity: 1;
       }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .nav {
+      display: none;
     }
   }
 }

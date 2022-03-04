@@ -6,7 +6,7 @@
   padding: 50px;
 
   .profile-photo {
-    width: 30vw;
+    width: 40vw;
     max-width: 300px;
     border-radius: 50%;
     border: 5px solid white;
@@ -17,7 +17,7 @@
     -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 500px) {
     .profile-photo {
       min-width: 200px;
     }
