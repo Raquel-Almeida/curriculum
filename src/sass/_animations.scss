@@ -1,23 +1,23 @@
-@keyframes fade-in {
+@keyframes fade_in {
   from {
     visibility: hidden;
     opacity: 0;
   }
   1% {
     visibility: visible;
+    opacity: 0;
   }
-
   to {
     visibility: visible;
     opacity: 1;
   }
 }
 
-.fade-in {
+.fade_in {
   animation: fade-in 0.3s ease-in-out forwards;
 }
 
-@keyframes fade-out {
+@keyframes fade_out {
   from {
     visibility: visible;
     opacity: 1;
@@ -32,6 +32,6 @@
   }
 }
 
-.fade-out {
+.fade_out {
   animation: fade-out 0.3s ease-in-out forwards;
 }

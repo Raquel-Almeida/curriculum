@@ -1,6 +1,9 @@
 import React from "react";
+
 import Header from "./components/Header/Header";
-import Pages from "./components/Pages/Pages";
+import About from "./components/About/About";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Contacts from "./components/Contacts/Contacts";
 
 import "./App.css";
 
@@ -8,7 +11,9 @@ function App() {
   return (
     <React.Fragment>
       <Header />
-      <Pages />
+      <About />
+      <Portfolio/>
+      <Contacts/>
     </React.Fragment>
   );
 }

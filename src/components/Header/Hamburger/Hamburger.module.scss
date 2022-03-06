@@ -1,12 +1,11 @@
 @import "../../../sass/main.scss";
 
-.hamburger-button {
+.hamburger_button {
   @include flexCenter(column);
   align-self: center;
   cursor: pointer;
   gap: 7px;
-  height: 25px;
-  position: absolute;
+  margin-left: 30px;
 
   span {
     display: block;
@@ -32,8 +31,8 @@
   }
 }
 
-@media screen and (min-width: 500px) {
-  .hamburger-button {
+@media screen and (min-width: 700px) {
+  .hamburger_button {
     display: none;
   }
 }

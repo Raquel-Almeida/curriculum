@@ -1,0 +1,41 @@
+@import "../../../sass/main.scss";
+
+.menu {
+  @include flexCenter(row);
+  justify-content: flex-end;
+  width: 100%;
+  gap: 75px;
+  margin-right: 50px;
+
+  a {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 1px;
+      display: block;
+      top: 20px;
+      right: 0;
+      left: 0;
+      background: white;
+      position: absolute;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+}

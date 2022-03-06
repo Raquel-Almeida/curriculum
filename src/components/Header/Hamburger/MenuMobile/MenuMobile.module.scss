@@ -1,0 +1,58 @@
+@import "../../../../sass/main.scss";
+
+.overlay {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(241, 237, 238, 0.5) 0%, rgba(129, 146, 145, 1) 100%);
+  top: 8vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mobile_menu {
+  @include flexCenter(column);
+  width: 75%;
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 10px;
+  gap: 40px;
+  padding: 40px 0;
+
+  a {
+    color: $primaryColor;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 1px;
+      display: block;
+      right: 0;
+      left: 0;
+      background: $primaryColor;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .overlay {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: none;
+  }
+}
