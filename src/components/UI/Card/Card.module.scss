@@ -1,8 +1,8 @@
 @import "../../../sass/main.module.scss";
 
 .card {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  background-color: $backgroundColor;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   padding: 20px;
 }

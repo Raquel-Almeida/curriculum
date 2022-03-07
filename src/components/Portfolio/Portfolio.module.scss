@@ -2,7 +2,64 @@
 
 .portfolio {
   width: 100%;
-  padding: 20vh 0;
   background-color: white;
-  text-align: center;
+  padding: 10vh 0;
+
+  .projects_container {
+    @include flexCenter(column);
+    align-items: flex-start;
+    width: 90%;
+    max-width: 800px;
+    gap: 25px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 900;
+
+      &::after {
+        content: "";
+        width: 250px;
+        height: 1px;
+        display: block;
+        position: relative;
+        top: -10px;
+        left: 225px;
+        background-color: #b0b0b0;
+      }
+    }
+
+    .projects {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+
+      > * {
+        aspect-ratio: 1 / 1;
+        min-width: 250px;
+
+        &:first-child {
+          background-image: url("../../assets/FoodDeliveryThumbnail.jpg");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio .projects_container {
+    width: 60%;
+
+    h2::after {
+      display: none;
+    }
+
+    .projects {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
 }

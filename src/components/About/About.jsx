@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../UI/Button/Button";
 
-import profilePhoto from "../../assets/profile-photo.jpg";
+import profilePhoto from "../../assets/ProfilePhoto.jpg";
 import styles from "./About.module.scss";
 
 export default function About() {
@@ -15,9 +15,9 @@ export default function About() {
         ></img>
         <div className={styles.about_me_container}>
           <p className={styles.job}>Front-End Web Developer</p>
-          <p className={styles.name}>
-            Hi, I'm Raquel Almeida. Nice to meet you!
-          </p>
+          <h1 className={styles.name}>
+            Hi, I'm Raquel Almeida. Nice to meet you.
+          </h1>
           <p className={styles.about_me}>
             Gosto pelo trabalho em equipa, autonomia, ambição, boacapacidade de
             comunicação oral e escrita, facilidade de aprendizagem. Capacidade
