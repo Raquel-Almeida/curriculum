@@ -7,13 +7,13 @@ export default function MenuMobile() {
     <React.Fragment>
       <div className={styles.overlay}></div>
       <div className={styles.mobile_menu}>
-        <a href="/#about">
+        <a href="/">
           <span>01.</span> About
         </a>
-        <a href="/#contacts">
+        <a href="/">
           <span>02.</span> Timeline
         </a>
-        <a href="/#portfolio">
+        <a href="/">
           <span>03.</span> Portfolio
         </a>
       </div>
