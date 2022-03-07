@@ -13,30 +13,20 @@ export default function Portfolio() {
           <Card>
             <div className={styles.overlay}></div>
             <h3>Food Delivery App</h3>
-            <Button>
-              <a
-                href="https://github.com/Raquel-Almeida/food-delivery"
-                alt="Food Delivery On Github"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Code On Github
-              </a>
-            </Button>
+            <Button
+              url="https://github.com/Raquel-Almeida/food-delivery"
+              alt="Food Delivery On Github"
+              name="Show On Github"
+            ></Button>
           </Card>
           <Card>
             <div className={styles.overlay}></div>
             <h3>Curriculum App</h3>
-            <Button>
-              <a
-                href="https://github.com/Raquel-Almeida/curriculum"
-                alt="Curriculum On Github"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Code On Github
-              </a>
-            </Button>
+            <Button
+              url="https://github.com/Raquel-Almeida/curriculum"
+              alt="Curriculum On Github"
+              name="Show On Github"
+            ></Button>
           </Card>
         </div>
       </div>

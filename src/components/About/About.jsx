@@ -26,16 +26,11 @@ export default function About() {
             profissionalmente.
           </p>
         </div>
-        <Button>
-          <a
-            href="https://www.google.com/"
-            alt="CV"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download CV
-          </a>
-        </Button>
+        <Button
+          url="https://www.google.com/"
+          alt="CV"
+          name="Download CV"
+        ></Button>
       </div>
     </section>
   );
