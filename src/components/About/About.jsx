@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../UI/Button/Button";
 
 import profilePhoto from "../../assets/profile-photo.jpg";
 import styles from "./About.module.scss";
@@ -18,12 +19,23 @@ export default function About() {
             Hi, I'm Raquel Almeida. Nice to meet you!
           </p>
           <p className={styles.about_me}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Gosto pelo trabalho em equipa, autonomia, ambição, boacapacidade de
+            comunicação oral e escrita, facilidade de aprendizagem. Capacidade
+            de trabalhar sob pressão e múltiplas tarefas. Extremamente motivada
+            para melhorar constantemente asminhas competências e crescer
+            profissionalmente.
           </p>
         </div>
+        <Button>
+          <a
+            href="https://www.google.com/"
+            alt="CV"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download CV
+          </a>
+        </Button>
       </div>
     </section>
   );

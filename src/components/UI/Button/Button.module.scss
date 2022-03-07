@@ -1,0 +1,20 @@
+@import "../../../sass/main.module.scss";
+
+.button {
+  width: fit-content;
+  height: fit-content;
+  background-color: $primaryColor;
+  border-radius: 25px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  color: $backgroundColor;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $backgroundColor;
+    color: $primaryColor;
+  }
+}

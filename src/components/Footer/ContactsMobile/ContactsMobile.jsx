@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./ContactsMobile.module.scss";
 import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
+import { FiCodepen } from "react-icons/fi";
 
 export default function ContactsMobile() {
   return (
@@ -25,6 +26,16 @@ export default function ContactsMobile() {
           rel="noopener noreferrer"
         >
           <FiLinkedin />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://codepen.io/RaquelAlmeida"
+          alt="Codepen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FiCodepen />
         </a>
       </li>
     </ul>

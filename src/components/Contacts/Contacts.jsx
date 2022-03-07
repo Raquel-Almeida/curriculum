@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Contacts.module.scss";
 import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
+import { FiCodepen } from "react-icons/fi";
 
 export default function Contacts() {
   return (
@@ -19,12 +20,22 @@ export default function Contacts() {
       </li>
       <li>
         <a
-          href="https://www.linkedin.com/in/raquelalmeida95/"
+          href="https://www.linkedin.com/in/raquelalmeida95"
           alt="Linkedin"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FiLinkedin />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://codepen.io/RaquelAlmeida"
+          alt="Codepen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FiCodepen />
         </a>
       </li>
     </ul>

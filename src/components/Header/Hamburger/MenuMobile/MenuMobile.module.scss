@@ -2,7 +2,11 @@
 
 .overlay {
   position: absolute;
-  background: linear-gradient(0deg, rgba(241, 237, 238, 0.5) 0%, rgba(129, 146, 145, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(241, 237, 238, 0.5) 0%,
+    rgba(129, 146, 145, 1) 100%
+  );
   top: 8vh;
   left: 0;
   right: 0;
