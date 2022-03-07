@@ -1,4 +1,4 @@
-@import "../../../../sass/main.scss";
+@import "../../../../sass/main.module.scss";
 
 .overlay {
   position: absolute;
@@ -18,13 +18,14 @@
   transform: translateX(-50%);
   background-color: white;
   border-radius: 10px;
-  gap: 40px;
-  padding: 40px 0;
+  gap: 30px;
+  padding: 50px 0;
 
   a {
     color: $primaryColor;
     text-decoration: none;
     text-transform: capitalize;
+    font-size: 0.875rem;
 
     &::after {
       content: "";

@@ -1,0 +1,142 @@
+@-webkit-keyframes fade_in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade_in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade_in {
+  -webkit-animation: fade_in 0.3s ease-in-out forwards;
+          animation: fade_in 0.3s ease-in-out forwards;
+}
+
+@-webkit-keyframes fade_out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade_out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade_out {
+  -webkit-animation: fade_out 0.3s ease-in-out forwards;
+          animation: fade_out 0.3s ease-in-out forwards;
+}
+
+.overlay {
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(241, 237, 238, 0.5)), to(#819291));
+  background: linear-gradient(0deg, rgba(241, 237, 238, 0.5) 0%, #819291 100%);
+  top: 8vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mobile_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75%;
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  border-radius: 10px;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.mobile_menu a {
+  color: #819291;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 0.875rem;
+}
+
+.mobile_menu a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  display: block;
+  right: 0;
+  left: 0;
+  background: #819291;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile_menu a:hover::after {
+  width: 100%;
+}
+
+.mobile_menu a span {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .overlay {
+    display: none;
+  }
+  .mobile_menu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=MenuMobile.module.css.map */

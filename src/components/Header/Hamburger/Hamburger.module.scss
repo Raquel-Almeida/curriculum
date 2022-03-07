@@ -1,4 +1,4 @@
-@import "../../../sass/main.scss";
+@import "../../../sass/main.module.scss";
 
 .hamburger_button {
   @include flexCenter(column);
@@ -29,10 +29,17 @@
       transform: rotate(-45deg);
     }
   }
+  
 }
+
+.hidden {
+  display: none;
+}
+
 
 @media screen and (min-width: 700px) {
   .hamburger_button {
     display: none;
   }
 }
+

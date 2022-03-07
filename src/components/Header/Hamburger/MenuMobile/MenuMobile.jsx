@@ -12,6 +12,5 @@ export default function MenuMobile() {
         <a href="/#contacts"><span>03.</span> Contacts</a>
       </div>
     </React.Fragment>
-    
   )
 }

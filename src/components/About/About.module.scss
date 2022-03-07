@@ -1,10 +1,11 @@
-@import "../../sass/main.scss";
+@import "../../sass/main.module.scss";
 
 .about {
   width: 100%;
+  padding: 15vh 0;
   display: flex;
   justify-content: center;
-  
+
   .profile {
     @include flexCenter(row);
     width: 50%;
@@ -13,7 +14,7 @@
 
     .profile_photo {
       width: 70vw;
-      max-width: 325px;
+      max-width: 375px;
       min-width: 250px;
       box-shadow: 0 0 15px 5px rgb(0, 0, 0, 0.1);
       border-radius: 50%;
@@ -43,19 +44,21 @@
 
       .about_me {
         color: gray;
-
-        @media screen and (max-width: 900px) {
-          text-align: center;
-        }
-      }
-
-      @media screen and (max-width: 900px) {
-        align-items: center;
       }
     }
+  }
+}
 
-    @media screen and (max-width: 900px) {
-      flex-direction: column;
+@media screen and (max-width: 700px) {
+  .about .profile {
+    flex-direction: column-reverse;
+
+    .about_me_container {
+      align-items: center;
+
+      .about_me {
+        text-align: center;
+      }
     }
   }
 }
