@@ -8,6 +8,7 @@ export default function Footer() {
     <footer>
       <ContactsMobile />
       <p>Designed and built by Raquel Almeida</p>
+      <p>© 2022</p>
     </footer>
   );
 }
