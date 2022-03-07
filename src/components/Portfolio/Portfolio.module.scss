@@ -36,13 +36,57 @@
       gap: 25px;
 
       > * {
-        aspect-ratio: 1 / 1;
+        @include flexCenter(column);
         min-width: 250px;
+        aspect-ratio: 1 / 1;
+        gap: 25px;
+        position: relative;
+        bottom: 0;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          bottom: 5px;
+        }
+
+        .overlay {
+          position: absolute;
+          background: linear-gradient(
+            0deg,
+            rgba(226, 226, 226, 0.8) 0%,
+            rgb(171, 179, 174) 100%
+          );
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: inherit;
+          opacity: 0.8;
+        }
+        h3 {
+          text-shadow: 0 0 10px rgb(255, 255, 255, 0.5);
+        }
+
+        > *:not(:first-child) {
+          z-index: 1;
+        }
 
         &:first-child {
           background-image: url("../../assets/FoodDeliveryThumbnail.jpg");
           background-size: contain;
           background-repeat: no-repeat;
+        }
+
+        &:nth-child(2) {
+          background-image: url("../../assets/CurriculumThumbnail.jpg");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        a {
+          color: inherit;
+          background-color: inherit;
+          text-decoration: none;
+          white-space: nowrap;
         }
       }
     }
