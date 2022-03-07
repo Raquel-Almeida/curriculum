@@ -3,6 +3,7 @@
 .about {
   width: 100%;
   padding: 20vh 0;
+  background-color: white;
 
   .profile {
     @include flexCenter(row);
@@ -30,7 +31,8 @@
       gap: 15px;
 
       .job {
-        color: rgb(156, 156, 156);
+        color: rgb(141, 141, 141);
+        font-size: 0.875rem;
         white-space: nowrap;
       }
 
@@ -42,7 +44,8 @@
 
       .about_me {
         max-width: 500px;
-        color: gray;
+        color: rgb(95, 95, 95);
+        font-size: 1rem;
         text-align: right;
       }
     }

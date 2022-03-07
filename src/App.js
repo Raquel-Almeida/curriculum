@@ -15,8 +15,8 @@ function App() {
       <Header />
       <Contacts />
       <About />
-      <Portfolio />
       <Timeline />
+      <Portfolio />
       <Footer />
     </React.Fragment>
   );
