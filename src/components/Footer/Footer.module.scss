@@ -1,0 +1,14 @@
+@import "../../sass/main.module.scss";
+
+footer {
+  @include flexCenter(column);
+  width: 100%;
+  background-color: $primaryColor;
+  gap: 25px;
+  padding: 50px 0;
+  color: white;
+
+  p {
+    font-size: 0.75rem;
+  }
+}

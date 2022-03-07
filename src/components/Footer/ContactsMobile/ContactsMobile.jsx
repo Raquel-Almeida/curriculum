@@ -1,12 +1,12 @@
 import React from "react";
 
-import styles from "./Contacts.module.scss";
+import styles from "./ContactsMobile.module.scss";
 import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 
-export default function Contacts() {
+export default function ContactsMobile() {
   return (
-    <ul className={styles.contacts}>
+    <ul className={styles.contacts_mobile}>
       <li>
         <a
           href="https://github.com/Raquel-Almeida"

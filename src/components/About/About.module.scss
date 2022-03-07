@@ -2,23 +2,21 @@
 
 .about {
   width: 100%;
-  padding: 15vh 0;
+  padding: 20vh 50px;
   display: flex;
   justify-content: center;
 
   .profile {
     @include flexCenter(row);
-    width: 50%;
-    max-width: 900px;
     gap: 50px;
 
     .profile_photo {
-      width: 70vw;
-      max-width: 375px;
-      min-width: 250px;
-      box-shadow: 0 0 15px 5px rgb(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 350px;
+      min-width: 300px;
+      box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
       border-radius: 50%;
-      border: 10px solid transparent;
+      border: 5px solid transparent;
       image-rendering: -moz-crisp-edges; /* Firefox */
       image-rendering: -o-crisp-edges; /* Opera */
       image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
@@ -28,7 +26,9 @@
 
     .about_me_container {
       @include flexCenter(column);
-      align-items: flex-start;
+      align-items: flex-end;
+      width: 60%;
+      min-width: 325px;
       gap: 15px;
 
       .job {
@@ -43,21 +43,31 @@
       }
 
       .about_me {
+        max-width: 500px;
         color: gray;
+        text-align: right;
       }
     }
   }
 }
 
 @media screen and (max-width: 700px) {
-  .about .profile {
-    flex-direction: column-reverse;
+  .about {
+    padding: 10vh 0;
 
-    .about_me_container {
-      align-items: center;
+    .profile {
+      flex-direction: column-reverse;
 
-      .about_me {
-        text-align: center;
+      .profile_photo {
+        width: 200px;
+      }
+
+      .about_me_container {
+        align-items: center;
+
+        .about_me {
+          text-align: center;
+        }
       }
     }
   }

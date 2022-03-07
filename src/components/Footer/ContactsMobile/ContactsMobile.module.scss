@@ -1,0 +1,26 @@
+@import "../../../sass/main.module.scss";
+
+.contacts_mobile {
+  @include flexCenter(row);
+  gap: 20px;
+
+  li {
+    list-style-type: none;
+
+    a {
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: rgb(206, 206, 206);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .contacts_mobile {
+    display: none;
+  }
+}
