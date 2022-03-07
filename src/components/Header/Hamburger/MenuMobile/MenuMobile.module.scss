@@ -22,8 +22,9 @@
   transform: translateX(-50%);
   background-color: white;
   border-radius: 10px;
-  gap: 30px;
+  gap: 50px;
   padding: 50px 0;
+  font-weight: 700;
 
   a {
     color: $primaryColor;
@@ -34,7 +35,7 @@
     &::after {
       content: "";
       width: 0;
-      height: 1px;
+      height: 2px;
       display: block;
       right: 0;
       left: 0;
