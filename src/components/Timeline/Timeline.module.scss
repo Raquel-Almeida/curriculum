@@ -1,19 +1,19 @@
 @import "../../sass/main.module.scss";
 
-.timeline {
+.timeline_container {
   width: 100%;
   background-color: $primaryColor;
   color: white;
   padding: 10vh 50px;
   text-align: center;
 
-  .jobs {
+  .timeline {
     @include flexCenter(column);
     align-items: flex-start;
     max-width: 800px;
     min-width: 225px;
     text-align: left;
-    gap: 25px;
+    gap: 50px;
     margin: 0 auto;
 
     h2 {
@@ -35,7 +35,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  .timeline .jobs {
+  .timeline_container .timeline {
     width: 60%;
 
     h2::after {

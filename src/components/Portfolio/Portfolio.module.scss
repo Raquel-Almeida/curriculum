@@ -1,16 +1,17 @@
 @import "../../sass/main.module.scss";
 
-.portfolio {
+.portfolio_container {
   width: 100%;
   background-color: white;
   padding: 10vh 50px;
 
-  .projects_container {
+  .portfolio {
     @include flexCenter(column);
     align-items: flex-start;
+    width: 95%;
     max-width: 800px;
-    min-width: 225px;
-    gap: 25px;
+    min-width: 2px;
+    gap: 50px;
     margin: 0 auto;
 
     h2 {
@@ -31,65 +32,37 @@
 
     .projects {
       width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 25px;
 
-      > * {
-        @include flexCenter(column);
-        position: relative;
-        bottom: 0;
-        aspect-ratio: 1 / 1;
-        gap: 25px;
-        transition: all 0.2s ease-in-out;
+      .project {
+        width: 100%;
+        padding-bottom: 50px;
 
-        &:hover {
-          bottom: 5px;
-        }
-
-        .overlay {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background: $backgroundColor;
-          border-radius: inherit;
-          opacity: 0.8;
+        img {
+          width: 100%;
         }
 
         h3 {
-          text-shadow: 0 0 5px rgb(255, 255, 255, 0.2);
+          text-align: center;
+          padding: 20px 0 15px 0;
+          color: $primaryColor;
+          font-family: $titleFont;
+          text-transform: uppercase;
         }
 
-        > *:not(:first-child) {
-          z-index: 1;
-        }
-
-        &:first-child {
-          background-image: url("../../assets/FoodDeliveryThumbnail.jpg");
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-
-        &:nth-child(2) {
-          background-image: url("../../assets/CurriculumThumbnail.jpg");
-          background-repeat: no-repeat;
-          background-size: contain;
+        .description {
+          width: 70%;
+          margin: 0 auto;
+          text-align: center;
         }
       }
     }
   }
-  img {
-    width: 100%;
-    padding: 100px 0 0 0;
-    margin: 0 auto;
-  }
 }
 
 @media screen and (max-width: 700px) {
-  .portfolio .projects_container {
-    width: 60%;
+  .portfolio_container .portfolio {
+    width: 95%;
+    min-width: 250px;
 
     h2::after {
       display: none;
@@ -98,6 +71,10 @@
     .projects {
       width: 100%;
       grid-template-columns: 1fr;
+
+      .project .description {
+        width: 100%;
+      }
     }
   }
 }
