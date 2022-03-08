@@ -6,12 +6,10 @@
   padding: 10vh 50px;
 
   .portfolio {
-    @include flexCenter(column);
     align-items: flex-start;
     width: 95%;
     max-width: 800px;
     min-width: 2px;
-    gap: 50px;
     margin: 0 auto;
 
     h2 {
@@ -32,21 +30,65 @@
 
     .projects {
       width: 100%;
+      padding-top: 50px;
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+          text-align: center;
+          background: #fff;
+          font-size: 18px;
+        }
+
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
 
       .project {
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        gap: 15px;
         padding-bottom: 50px;
 
-        img {
+        a img {
           width: 100%;
         }
 
         h3 {
           text-align: center;
-          padding: 20px 0 15px 0;
           color: $primaryColor;
           font-family: $titleFont;
+          font-size: 1.5rem;
           text-transform: uppercase;
+        }
+
+        .github_link {
+          align-self: center;
+          color: $primaryColor;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            color: $secondaryColor;
+          }
         }
 
         .description {
@@ -54,6 +96,19 @@
           margin: 0 auto;
           text-align: center;
         }
+      }
+    }
+
+    .projects {
+      :global(.swiper-pagination-bullet) {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    .projects {
+      :global(.swiper-pagination-bullet-active) {
+        background-color: $primaryColor;
       }
     }
   }
