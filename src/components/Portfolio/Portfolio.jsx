@@ -4,6 +4,9 @@ import Button from "../UI/Button/Button";
 
 import styles from "./Portfolio.module.scss";
 
+import FoodDeliveryDevices from "../../assets/FoodDeliveryDevices.jpg";
+import CurriculumDevices from "../../assets/CurriculumDevices.jpg";
+
 export default function Portfolio() {
   return (
     <section className={styles.portfolio} id="portfolio">
@@ -29,6 +32,8 @@ export default function Portfolio() {
             ></Button>
           </Card>
         </div>
+        <img src={FoodDeliveryDevices} alt="" />
+        <img src={CurriculumDevices} alt="" />
       </div>
     </section>
   );
