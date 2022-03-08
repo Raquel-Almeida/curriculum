@@ -1,19 +1,20 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import styles from "./Menu.module.scss";
 
 export default function Menu(props) {
   return (
     <div className={styles.menu}>
-      <a href="/">
+      <Link to="about" smooth={true} offset={-100}>
         <span>01.</span> About
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="timeline" smooth={true} offset={-100}>
         <span>02.</span> Timeline
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="portfolio" smooth={true} offset={-100}>
         <span>03.</span> Portfolio
-      </a>
+      </Link>
     </div>
   );
 }

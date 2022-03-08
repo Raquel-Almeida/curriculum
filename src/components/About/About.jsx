@@ -6,7 +6,7 @@ import styles from "./About.module.scss";
 
 export default function About() {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <div className={styles.profile}>
         <img
           className={styles.profile_photo}

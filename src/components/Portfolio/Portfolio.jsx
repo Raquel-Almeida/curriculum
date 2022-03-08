@@ -6,7 +6,7 @@ import styles from "./Portfolio.module.scss";
 
 export default function Portfolio() {
   return (
-    <section className={styles.portfolio}>
+    <section className={styles.portfolio} id="portfolio">
       <div className={styles.projects_container}>
         <h2>03. Things I've Built</h2>
         <div className={styles.projects}>

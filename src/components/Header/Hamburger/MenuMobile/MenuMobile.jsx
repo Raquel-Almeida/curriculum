@@ -1,21 +1,22 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import styles from "./MenuMobile.module.scss";
 
-export default function MenuMobile() {
+export default function MenuMobile(props) {
   return (
     <React.Fragment>
       <div className={styles.overlay}></div>
       <div className={styles.mobile_menu}>
-        <a href="/">
+        <Link to="about" smooth={true} onClick={props.onLinkClick}>
           <span>01.</span> About
-        </a>
-        <a href="/">
+        </Link>
+        <Link to="timeline" smooth={true} onClick={props.onLinkClick}>
           <span>02.</span> Timeline
-        </a>
-        <a href="/">
+        </Link>
+        <Link to="portfolio" smooth={true} onClick={props.onLinkClick}>
           <span>03.</span> Portfolio
-        </a>
+        </Link>
       </div>
     </React.Fragment>
   );

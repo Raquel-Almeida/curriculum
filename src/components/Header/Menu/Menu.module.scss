@@ -7,13 +7,14 @@
   gap: 50px;
   margin-right: 50px;
 
-  a {
+  > * {
     color: white;
     font-weight: 700;
     letter-spacing: 1px;
     position: relative;
     text-decoration: none;
     text-transform: capitalize;
+    cursor: pointer;
 
     &::after {
       content: "";
