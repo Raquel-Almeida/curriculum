@@ -54,7 +54,7 @@
     .card {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
-      grid-gap: 15px 10px;
+      grid-gap: 5vw 15px;
       width: 100%;
       background-color: white;
       border-radius: 10px;
@@ -64,8 +64,8 @@
       .tech {
         @include flexCenter(column);
         margin: 0 auto;
-        width: 60px;
-        aspect-ratio: 1 / 1;
+        height: 50px;
+        width: 50px;
         background: whitesmoke;
         border-radius: 50%;
         cursor: pointer;
@@ -98,6 +98,8 @@
         text-align: center;
 
         .course {
+          @include flexCenter(column);
+          justify-content: space-between;
           width: 100%;
           padding: 0 25px;
           max-width: 500px;
@@ -107,6 +109,7 @@
             font-size: 0.875rem;
             color: $secondaryColor;
             text-transform: uppercase;
+            font-weight: 900;
 
             p {
               font-size: 0.75rem;
@@ -160,6 +163,14 @@
           border-bottom: none;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills_container .skills {
+    .card.techs {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
