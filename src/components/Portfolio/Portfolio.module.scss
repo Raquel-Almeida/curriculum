@@ -83,11 +83,19 @@
 
         .github_link {
           align-self: center;
-          color: $primaryColor;
+          color: $secondaryColor;
           transition: all 0.2s ease-in-out;
+          background-color: $backgroundColor;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           &:hover {
-            color: $secondaryColor;
+            color: $backgroundColor;
+            background-color: $secondaryColor;
           }
         }
 
