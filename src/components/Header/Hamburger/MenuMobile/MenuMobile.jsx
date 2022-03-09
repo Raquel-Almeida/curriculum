@@ -8,16 +8,36 @@ export default function MenuMobile(props) {
     <React.Fragment>
       <div className={styles.overlay}></div>
       <div className={styles.mobile_menu}>
-        <Link to="about" smooth={true} offset={-100}>
+        <Link
+          to="about"
+          smooth={true}
+          offset={-100}
+          onClick={props.onLinkClick}
+        >
           <span>01.</span> About
         </Link>
-        <Link to="skills" smooth={true} offset={-100}>
+        <Link
+          to="skills"
+          smooth={true}
+          offset={-100}
+          onClick={props.onLinkClick}
+        >
           <span>02.</span> Skills
         </Link>
-        <Link to="timeline" smooth={true} offset={-100}>
+        <Link
+          to="timeline"
+          smooth={true}
+          offset={-100}
+          onClick={props.onLinkClick}
+        >
           <span>03.</span> Timeline
         </Link>
-        <Link to="portfolio" smooth={true} offset={-100}>
+        <Link
+          to="portfolio"
+          smooth={true}
+          offset={-100}
+          onClick={props.onLinkClick}
+        >
           <span>04.</span> Portfolio
         </Link>
       </div>

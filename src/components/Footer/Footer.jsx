@@ -1,7 +1,8 @@
 import React from "react";
+
 import ContactsMobile from "./ContactsMobile/ContactsMobile";
 
-import styles from "./Footer.module.scss";
+import "./Footer.module.scss";
 
 export default function Footer() {
   return (

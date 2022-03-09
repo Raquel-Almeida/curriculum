@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css/bundle";
 
-import styles from "./Portfolio.module.scss";
+import { FiGithub } from "react-icons/fi";
 import FoodDeliveryDevices from "../../assets/FoodDeliveryDevices.jpg";
 import CurriculumDevices from "../../assets/CurriculumDevices.jpg";
-import { FiGithub } from "react-icons/fi";
+import styles from "./Portfolio.module.scss";
 
 export default function Portfolio() {
   return (
@@ -88,16 +88,4 @@ export default function Portfolio() {
       </div>
     </section>
   );
-}
-
-{
-  /* <Card>
-            <div className={styles.overlay}></div>
-            <h3>Food Delivery App</h3>
-            <Button
-              url="https://github.com/Raquel-Almeida/food-delivery"
-              alt="Food Delivery On Github"
-              name="Show On Github"
-            ></Button>
-          </Card> */
 }

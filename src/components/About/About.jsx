@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../UI/Button/Button";
 
 import profilePhoto from "../../assets/ProfilePhoto.jpg";
 import styles from "./About.module.scss";
@@ -26,11 +25,6 @@ export default function About() {
             profissionalmente.
           </p>
         </div>
-        <Button
-          url="https://www.google.com/"
-          alt="CV"
-          name="Download CV"
-        ></Button>
       </div>
     </section>
   );

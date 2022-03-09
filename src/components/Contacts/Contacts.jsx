@@ -1,9 +1,9 @@
 import React from "react";
 
-import styles from "./Contacts.module.scss";
 import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { FiCodepen } from "react-icons/fi";
+import styles from "./Contacts.module.scss";
 
 export default function Contacts() {
   return (

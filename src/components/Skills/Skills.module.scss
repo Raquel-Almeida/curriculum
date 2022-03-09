@@ -2,7 +2,11 @@
 
 .skills_container {
   width: 100%;
-  background-color: white;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(129, 146, 145, 1) 40%
+  );
   color: black;
   padding: 10vh 35px;
   text-align: center;
@@ -10,6 +14,7 @@
   .skills {
     @include flexCenter(column);
     align-items: flex-start;
+    width: 95%;
     max-width: 800px;
     min-width: 225px;
     text-align: left;
@@ -19,6 +24,7 @@
     h2 {
       font-size: 1rem;
       font-weight: 900;
+      color: white;
 
       &::after {
         content: "";
@@ -29,6 +35,49 @@
         bottom: 10px;
         left: 260px;
         background-color: #c2c2c2;
+      }
+    }
+
+    h3 {
+      align-self: center;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: -35px;
+      color: white;
+    }
+
+    .card {
+      @include flexCenter(row);
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 100%;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      gap: 10px;
+      padding: 50px 20px;
+
+      .skill {
+        @include flexCenter(column);
+        width: 60px;
+        gap: 10px;
+        padding: 25px 0;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        img {
+          width: 30px;
+        }
+
+        p {
+          font-size: 0.625rem;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        &:hover {
+          padding-top: 15px;
+        }
       }
     }
   }
