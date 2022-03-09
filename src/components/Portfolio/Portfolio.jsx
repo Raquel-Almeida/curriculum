@@ -46,11 +46,11 @@ export default function Portfolio() {
                   <FiGithub />
                 </a>
                 <p className={styles.description}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Web app created using React, in which I created a mock API to
+                  fetch the data used to build the meals list. The data returned
+                  by the API was filled through HTTP request using Postman App.
+                  You can add items to the cart and once you complete your
+                  order, you'll receive a confirmation email.
                 </p>
               </div>
             </SwiperSlide>
@@ -75,11 +75,8 @@ export default function Portfolio() {
                   <FiGithub />
                 </a>
                 <p className={styles.description}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Web app created using React, where I present myself and all
+                  the projects I've done so far.
                 </p>
               </div>
             </SwiperSlide>

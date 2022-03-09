@@ -44,10 +44,11 @@
       font-weight: bold;
       font-family: $titleFont;
       text-transform: uppercase;
-      margin: 50px 0 10px 0;
+      margin: 40px 0 10px 0;
 
       &:last-of-type {
         color: $primaryColor;
+        margin-top: 60px;
       }
     }
 
@@ -101,7 +102,7 @@
           @include flexCenter(column);
           justify-content: space-between;
           width: 100%;
-          padding: 0 25px;
+          padding: 0 15px;
           max-width: 500px;
           border-right: 1px solid #e6ecf8;
 
@@ -125,6 +126,27 @@
             .course_link {
               text-decoration: none;
               color: black;
+            }
+          }
+
+          ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 20px;
+            overflow: hidden;
+            list-style: none;
+            gap: 10px 20px;
+
+            li {
+              text-align: left;
+              white-space: nowrap;
+
+              &::before {
+                content: "\25BA \0020";
+                margin-right: 10px;
+                color: $secondaryColor;
+                font-size: 0.625rem;
+              }
             }
           }
 

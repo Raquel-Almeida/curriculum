@@ -60,7 +60,7 @@ export default function Skills() {
             <h5>
               <a
                 className={styles.course_link}
-                href="https://flag.pt/"
+                href="https://flag.pt/curso/especializado-front-end-web-developer/"
                 alt="Flag"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -68,10 +68,16 @@ export default function Skills() {
                 Flag
               </a>
             </h5>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+            <ul>
+              <li>UI/UX</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Sass</li>
+              <li>Responsive</li>
+              <li>Angular</li>
+              <li>React</li>
+              <li>Git</li>
+            </ul>
           </div>
           <div className={styles.course}>
             <h4>Introduction To coding</h4>
@@ -86,10 +92,12 @@ export default function Skills() {
                 SheCodes
               </a>
             </h5>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>ES6</li>
+              <li>VS Code</li>
+            </ul>
           </div>
           <div className={styles.course}>
             <h4>React - The Complete Guide</h4>
@@ -104,10 +112,14 @@ export default function Skills() {
                 Udemy
               </a>
             </h5>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+            <ul>
+              <li>Reactjs</li>
+              <li>Hooks</li>
+              <li>Redux</li>
+              <li>Routing</li>
+              <li>Animations</li>
+              <li>Next.js</li>
+            </ul>
           </div>
         </div>
       </div>

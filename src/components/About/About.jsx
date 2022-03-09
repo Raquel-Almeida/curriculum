@@ -18,11 +18,8 @@ export default function About() {
             Hi, I'm Raquel Almeida. Nice to meet you.
           </h1>
           <p className={styles.about_me}>
-            Gosto pelo trabalho em equipa, autonomia, ambição, boa capacidade de
-            comunicação oral e escrita, facilidade de aprendizagem. Capacidade
-            de trabalhar sob pressão e múltiplas tarefas. Extremamente motivada
-            para melhorar constantemente as minhas competências e crescer
-            profissionalmente.
+            I'm extremely motivated to constantly improve my skills and grow
+            professionally.
           </p>
         </div>
       </div>
