@@ -25,19 +25,18 @@
 
     .about_me_container {
       @include flexCenter(column);
-      min-width: 325px;
       gap: 10px;
 
       .job {
         color: rgb(141, 141, 141);
         font-family: $titleFont;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         white-space: nowrap;
       }
 
       .name {
         font-family: $titleFont;
-        font-size: 1.875rem;
+        font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
       }

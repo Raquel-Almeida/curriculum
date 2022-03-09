@@ -25,7 +25,7 @@ export default function Portfolio() {
             <SwiperSlide>
               <div className={styles.project}>
                 <a
-                  href="https://raquel-almeida.github.io/food-delivery"
+                  href="https://raquel-almeida.github.io/food-delivery/"
                   alt="Food Delivery App"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -38,7 +38,7 @@ export default function Portfolio() {
                 <h3>Food Delivery App</h3>
                 <a
                   className={styles.github_link}
-                  href="https://github.com/Raquel-Almeida/food-delivery"
+                  href="https://github.com/Raquel-Almeida/food-delivery/"
                   alt="Food Delivery App On Github"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -57,7 +57,7 @@ export default function Portfolio() {
             <SwiperSlide>
               <div className={styles.project}>
                 <a
-                  href="https://raquel-almeida.github.io/curriculum"
+                  href="https://raquel-almeida.github.io/curriculum/"
                   alt="Curriculum App"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -67,7 +67,7 @@ export default function Portfolio() {
                 <h3>Curriculum App</h3>
                 <a
                   className={styles.github_link}
-                  href="https://github.com/Raquel-Almeida/curriculum"
+                  href="https://github.com/Raquel-Almeida/curriculum/"
                   alt="Curriculum App On Github"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -2,16 +2,20 @@
 
 .timeline_container {
   width: 100%;
-  background-color: white;
-  color: black;
-  padding: 10vh 35px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(129, 146, 145, 1) 20%
+  );
+  color: white;
+  padding: 8vh 35px;
   text-align: center;
 
   .timeline {
     @include flexCenter(column);
     align-items: flex-start;
     width: 95%;
-    max-width: 800px;
+    max-width: 1200px;
     min-width: 225px;
     text-align: left;
     gap: 50px;

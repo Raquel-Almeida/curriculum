@@ -4,21 +4,20 @@
   width: 100%;
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 1) 40%,
-    rgba(129, 146, 145, 1) 40%
+    rgba(255, 255, 255, 1) 70%,
+    rgba(129, 146, 145, 1) 70%
   );
   color: black;
-  padding: 10vh 35px;
+  padding: 8vh 35px;
   text-align: center;
 
   .skills {
     @include flexCenter(column);
     align-items: flex-start;
     width: 95%;
-    max-width: 800px;
+    max-width: 1200px;
     min-width: 225px;
     text-align: left;
-    gap: 50px;
     margin: 0 auto;
 
     h2 {
@@ -30,53 +29,105 @@
         content: "";
         width: 200px;
         height: 1px;
-        display: block;
         position: relative;
+        display: block;
         bottom: 10px;
-        left: 260px;
+        left: 175px;
         background-color: #c2c2c2;
       }
     }
 
     h3 {
       align-self: center;
-      font-size: 1rem;
-      font-weight: 400;
-      margin-bottom: -35px;
       color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: $titleFont;
+      text-transform: uppercase;
+      margin: 50px 0 10px 0;
+
+      &:last-of-type {
+        color: $primaryColor;
+      }
     }
 
     .card {
-      @include flexCenter(row);
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-gap: 15px 10px;
       width: 100%;
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-      gap: 10px;
       padding: 50px 20px;
 
-      .skill {
+      .tech {
         @include flexCenter(column);
+        margin: 0 auto;
         width: 60px;
-        gap: 10px;
-        padding: 25px 0;
-        transition: all 0.2s ease-in-out;
+        aspect-ratio: 1 / 1;
+        background: whitesmoke;
+        border-radius: 50%;
         cursor: pointer;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 
         img {
           width: 30px;
+          transition: all 0.2s ease-in-out;
         }
 
         p {
+          display: none;
           font-size: 0.625rem;
           font-weight: bold;
-          text-transform: uppercase;
+          transition: all 0.2s ease-in-out;
         }
 
-        &:hover {
-          padding-top: 15px;
+        &:hover img {
+          display: none;
+        }
+
+        &:hover p {
+          display: block;
+        }
+      }
+
+      &.courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+
+        .course {
+          width: 100%;
+          padding: 0 25px;
+          max-width: 500px;
+          border-right: 1px solid #e6ecf8;
+
+          h4 {
+            font-size: 0.875rem;
+            color: $secondaryColor;
+            text-transform: uppercase;
+
+            p {
+              font-size: 0.75rem;
+              font-weight: normal;
+            }
+          }
+
+          h5 {
+            margin: 20px 0;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+
+            .course_link {
+              text-decoration: none;
+              color: black;
+            }
+          }
+
+          &:last-child {
+            border-right: none;
+          }
         }
       }
     }
@@ -89,6 +140,26 @@
 
     h2::after {
       display: none;
+    }
+
+    .card.techs {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card.courses {
+      grid-template-columns: 1fr;
+      gap: 50px;
+
+      .course {
+        border-bottom: 1px solid #e6ecf8;
+        border-right: none;
+        padding-bottom: 50px;
+
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
     }
   }
 }
