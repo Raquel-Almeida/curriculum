@@ -12,10 +12,10 @@ export default function Portfolio() {
   return (
     <section className={styles.portfolio_container} id="portfolio">
       <div className={styles.portfolio}>
-        <h2>03. Things I've Built</h2>
+        <h2>04. Things I've Built</h2>
         <div className={styles.projects}>
           <Swiper
-            spaceBetween={300}
+            spaceBetween={100}
             pagination={{
               clickable: true,
             }}

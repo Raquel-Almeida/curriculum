@@ -1,13 +1,13 @@
 @import "../../sass/main.module.scss";
 
-.timeline_container {
+.skills_container {
   width: 100%;
-  background-color: $primaryColor;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 10vh 35px;
   text-align: center;
 
-  .timeline {
+  .skills {
     @include flexCenter(column);
     align-items: flex-start;
     max-width: 800px;
@@ -27,7 +27,7 @@
         display: block;
         position: relative;
         bottom: 10px;
-        left: 190px;
+        left: 260px;
         background-color: #c2c2c2;
       }
     }
@@ -35,7 +35,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  .timeline_container .timeline {
+  .skills_container .skills {
     min-width: 250px;
 
     h2::after {

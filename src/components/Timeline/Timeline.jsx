@@ -6,7 +6,7 @@ export default function Timeline() {
   return (
     <div className={styles.timeline_container} id="timeline">
       <div className={styles.timeline}>
-        <h2>02. Timeline</h2>
+        <h2>03. Where I've Worked</h2>
         <div>A</div>
         <div>B</div>
         <div>C</div>
