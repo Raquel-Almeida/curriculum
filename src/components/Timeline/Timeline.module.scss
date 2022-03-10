@@ -2,13 +2,9 @@
 
 .timeline_container {
   width: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 20%,
-    rgba(129, 146, 145, 1) 20%
-  );
-  color: white;
-  padding: 8vh 35px;
+  background: white;
+  color: black;
+  padding: 6vh 25px;
   text-align: center;
 
   .timeline {
