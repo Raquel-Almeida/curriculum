@@ -55,7 +55,7 @@
     .card {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
-      grid-gap: 5vw 15px;
+      grid-gap: 2vh 0;
       width: 100%;
       background-color: white;
       border-radius: 10px;
@@ -163,7 +163,7 @@
 
 @media screen and (max-width: 930px) {
   .skills_container .skills {
-    min-width: 250px;
+    min-width: 200px;
 
     h2::after {
       display: none;
@@ -195,6 +195,10 @@
   .skills_container .skills {
     .card.techs {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card.courses .course ul {
+      grid-template-columns: 1fr;
     }
   }
 }

@@ -9,7 +9,7 @@
     align-items: flex-start;
     width: 95%;
     max-width: 1200px;
-    min-width: 225px;
+    min-width: 200px;
     margin: 0 auto;
 
     h2 {
@@ -124,7 +124,7 @@
 
 @media screen and (max-width: 700px) {
   .portfolio_container .portfolio {
-    min-width: 250px;
+    min-width: 200px;
 
     h2::after {
       display: none;
