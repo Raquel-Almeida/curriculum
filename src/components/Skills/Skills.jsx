@@ -100,7 +100,10 @@ export default function Skills() {
             </ul>
           </div>
           <div className={styles.course}>
-            <h4>React - The Complete Guide</h4>
+            <h4>
+              React - The Complete Guide
+              <p>**In Progress**</p>
+            </h4>
             <h5>
               <a
                 className={styles.course_link}

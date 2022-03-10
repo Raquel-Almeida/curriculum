@@ -4,8 +4,8 @@
   width: 100%;
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(129, 146, 145, 1) 70%
+    rgba(255, 255, 255, 1) 72%,
+    rgba(129, 146, 145, 1) 72%
   );
   color: black;
   padding: 8vh 35px;
@@ -100,7 +100,8 @@
 
         .course {
           @include flexCenter(column);
-          justify-content: space-between;
+          justify-content: space-evenly;
+          justify-self: center;
           width: 100%;
           padding: 0 15px;
           max-width: 500px;
@@ -159,7 +160,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 930px) {
   .skills_container .skills {
     min-width: 250px;
 

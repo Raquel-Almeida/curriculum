@@ -18,8 +18,11 @@ export default function About() {
             Hi, I'm Raquel Almeida. Nice to meet you.
           </h1>
           <p className={styles.about_me}>
-            I'm extremely motivated to constantly improve my skills and grow
-            professionally.
+            I'm extremely motivated to constantly improve my skills, overcome
+            hurdles and grow professionally. I enjoy working in a team
+            enviroment and I do well under pressure. In my spare time I love to
+            travell, discover new places and cultures, watch movies and series
+            and collect vinyl records.
           </p>
         </div>
       </div>
