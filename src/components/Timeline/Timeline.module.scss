@@ -4,13 +4,13 @@
   width: 100%;
   background: white;
   color: black;
-  padding: 6vh 25px;
+  padding: 6vh 0;
   text-align: center;
 
   .timeline {
     @include flexCenter(column);
     align-items: flex-start;
-    width: 95%;
+    width: 90%;
     max-width: 1200px;
     min-width: 200px;
     text-align: left;
@@ -30,6 +30,47 @@
         bottom: 10px;
         left: 190px;
         background-color: #c2c2c2;
+      }
+    }
+
+    .card {
+      @include flexCenter(column);
+      width: 100%;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      padding: 0 20px;
+      text-align: center;
+
+      .job {
+        @include flexCenter(column);
+        gap: 25px;
+        width: 100%;
+        max-width: 800px;
+        padding: 50px 0;
+        border-bottom: 1px solid #d8d8d8;
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+
+        h4 {
+          font-size: 1.125rem;
+          color: $primaryColor;
+          text-shadow: 0 0 5px rgba(107, 107, 107, 0.2);
+          text-transform: uppercase;
+          font-weight: 900;
+
+          p {
+            font-size: 0.75rem;
+            font-weight: normal;
+          }
+        }
+
+        .job_description {
+          @include flexCenter(column);
+          gap: 15px;
+        }
       }
     }
   }

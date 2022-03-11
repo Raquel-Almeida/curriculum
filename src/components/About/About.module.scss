@@ -36,16 +36,12 @@
         white-space: nowrap;
       }
 
-      .name {
+      h1 {
         font-family: $titleFont;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
       }
 
       .about_me {
         max-width: 800px;
-        color: rgb(95, 95, 95);
         font-size: 1rem;
         margin: 25px 0 0 0;
         text-align: center;
