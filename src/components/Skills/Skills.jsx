@@ -13,6 +13,7 @@ import styles from "./Skills.module.scss";
 export default function Skills() {
   return (
     <section className={styles.skills_container} id="skills">
+      <div className={styles.background_stripe}></div>
       <div className={styles.skills}>
         <h2>02. Skills & Courses</h2>
         <h3>Some Of The Technologies I've Learned</h3>
