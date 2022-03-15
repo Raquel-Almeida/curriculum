@@ -51,6 +51,7 @@
       font-family: $titleFont;
       text-transform: uppercase;
       margin: 40px 0 10px 0;
+      text-align: center;
 
       &:last-of-type {
         color: $primaryColor;
@@ -114,7 +115,7 @@
           border-right: 1px solid #d8d8d8;
 
           h4 {
-            font-size: 0.875rem;
+            font-size: 0.9rem;
             color: $primaryColor;
             text-shadow: 0 0 5px rgba(107, 107, 107, 0.2);
             text-transform: uppercase;

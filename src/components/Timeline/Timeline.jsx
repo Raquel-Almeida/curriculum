@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { HiOutlineChevronDown } from "react-icons/hi";
+import { FaChevronDown } from "react-icons/fa";
 import styles from "./Timeline.module.scss";
 
 export default function Timeline() {
@@ -49,7 +49,7 @@ export default function Timeline() {
                       : styles["arrow"]
                   }
                 >
-                  <HiOutlineChevronDown />
+                  <FaChevronDown />
                 </div>
               </div>
               <p

@@ -18,9 +18,12 @@ export default function About() {
           <p className={styles.about_me}>
             I'm extremely motivated to constantly improve my skills, overcome
             hurdles and grow professionally. I enjoy working in a team
-            enviroment and I do well under pressure. In my spare time I love to
-            travel, discover new places and cultures, watch movies and series
-            and collect vinyl records.
+            enviroment and I do well under pressure. I used to work as a
+            Check-in and Gate Agent at Lisbon Airport but decided to change my
+            career path and so I started to learn how to code, which I've always
+            been interested in. In my spare time I love to travel, discover new
+            places and cultures, watch movies and series and collect vinyl
+            records.
           </p>
         </div>
       </div>
