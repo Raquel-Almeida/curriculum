@@ -50,7 +50,8 @@ export default function Portfolio() {
                   fetch the data used to build the meals list. The data returned
                   by the API was filled through HTTP request using Postman App.
                   You can add items to the cart and once you complete your
-                  order, you'll receive a confirmation email.
+                  order, you'll receive a confirmation email. Fully scalable, so
+                  it can be used in any device.
                 </p>
               </div>
             </SwiperSlide>
@@ -76,7 +77,8 @@ export default function Portfolio() {
                 </a>
                 <p className={styles.description}>
                   Web app created using React, where I present myself and all
-                  the projects I've done so far.
+                  the projects I've done so far. Fully scalable, so it can be
+                  used in any device.
                 </p>
               </div>
             </SwiperSlide>
