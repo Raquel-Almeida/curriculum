@@ -14,7 +14,7 @@ export default function MenuMobile(props) {
           offset={-100}
           onClick={props.onLinkClick}
         >
-          <span>01.</span> About
+          About
         </Link>
         <Link
           to="skills"
@@ -22,7 +22,7 @@ export default function MenuMobile(props) {
           offset={-100}
           onClick={props.onLinkClick}
         >
-          <span>02.</span> Skills
+          Skills
         </Link>
         <Link
           to="timeline"
@@ -30,7 +30,7 @@ export default function MenuMobile(props) {
           offset={-100}
           onClick={props.onLinkClick}
         >
-          <span>03.</span> Timeline
+          Timeline
         </Link>
         <Link
           to="portfolio"
@@ -38,7 +38,7 @@ export default function MenuMobile(props) {
           offset={-100}
           onClick={props.onLinkClick}
         >
-          <span>04.</span> Portfolio
+          Portfolio
         </Link>
       </div>
     </React.Fragment>

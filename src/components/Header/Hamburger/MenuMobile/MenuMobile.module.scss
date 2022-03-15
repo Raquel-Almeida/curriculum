@@ -28,6 +28,7 @@
 
   > * {
     color: $primaryColor;
+    cursor: pointer;
     text-decoration: none;
     text-transform: capitalize;
     font-size: 0.875rem;
@@ -45,10 +46,6 @@
 
     &:hover::after {
       width: 100%;
-    }
-
-    span {
-      display: none;
     }
   }
 }
