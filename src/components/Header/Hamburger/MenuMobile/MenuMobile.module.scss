@@ -11,6 +11,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 .mobile_menu {
@@ -25,6 +26,7 @@
   gap: 50px;
   padding: 50px 0;
   font-weight: 700;
+  animation: fadeIn 0.5s ease-in-out forwards;
 
   > * {
     color: $primaryColor;
@@ -32,6 +34,14 @@
     text-decoration: none;
     text-transform: capitalize;
     font-size: 0.875rem;
+    animation: slideDown 0.5s linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * 0.2s;
+      }
+    }
 
     &::after {
       content: "";

@@ -9,12 +9,12 @@
 
   > * {
     color: white;
+    cursor: pointer;
     font-weight: 700;
     letter-spacing: 1px;
     position: relative;
     text-decoration: none;
     text-transform: capitalize;
-    cursor: pointer;
     animation: slideDown 0.5s linear;
     animation-fill-mode: forwards;
     opacity: 0;

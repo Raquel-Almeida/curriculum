@@ -36,17 +36,7 @@ export default function Hamburger(props) {
         <span></span>
         <span></span>
       </div>
-      <div
-        className={
-          openMobileMenu
-            ? styles.fade_in
-            : wasOpen
-            ? styles.fade_out
-            : styles.hidden
-        }
-      >
-        <MenuMobile onLinkClick={onLinkClick} />
-      </div>
+      {openMobileMenu ? <MenuMobile onLinkClick={onLinkClick} /> : ""}
     </React.Fragment>
   );
 }

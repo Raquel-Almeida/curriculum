@@ -79,12 +79,12 @@
         border-radius: 50%;
         cursor: pointer;
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-        animation: slideUp 0.5s linear;
+        animation: slideUp 0.3s linear;
         animation-fill-mode: forwards;
         opacity: 0;
         @for $i from 1 through 8 {
           &:nth-child(#{$i}) {
-            animation-delay: $i * 0.1s + 2.5s;
+            animation-delay: $i * 0.1s + 0.8s;
           }
         }
 
@@ -216,16 +216,5 @@
     .card.courses .course ul {
       grid-template-columns: 1fr;
     }
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
   }
 }
