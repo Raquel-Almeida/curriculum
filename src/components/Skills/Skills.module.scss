@@ -84,7 +84,7 @@
         opacity: 0;
         @for $i from 1 through 8 {
           &:nth-child(#{$i}) {
-            animation-delay: $i * 0.1s;
+            animation-delay: $i * 0.1s + 2.5s;
           }
         }
 
