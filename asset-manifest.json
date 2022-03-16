@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/curriculum/static/css/main.9b5e0b3b.css",
-    "main.js": "/curriculum/static/js/main.bb3934f4.js",
+    "main.css": "/curriculum/static/css/main.bc7d1d04.css",
+    "main.js": "/curriculum/static/js/main.c99e8a87.js",
     "static/js/787.595c645d.chunk.js": "/curriculum/static/js/787.595c645d.chunk.js",
     "static/media/ProfilePhoto.jpg": "/curriculum/static/media/ProfilePhoto.71f7bc65b8c68a76d337.jpg",
     "static/media/FoodDeliveryDevices.jpg": "/curriculum/static/media/FoodDeliveryDevices.c762e55d1d155f811758.jpg",
@@ -13,12 +13,12 @@
     "static/media/Git.png": "/curriculum/static/media/Git.0e37f7a285c709ae7e21.png",
     "static/media/Photoshop.png": "/curriculum/static/media/Photoshop.c1d70b64178293fb7405.png",
     "index.html": "/curriculum/index.html",
-    "main.9b5e0b3b.css.map": "/curriculum/static/css/main.9b5e0b3b.css.map",
-    "main.bb3934f4.js.map": "/curriculum/static/js/main.bb3934f4.js.map",
+    "main.bc7d1d04.css.map": "/curriculum/static/css/main.bc7d1d04.css.map",
+    "main.c99e8a87.js.map": "/curriculum/static/js/main.c99e8a87.js.map",
     "787.595c645d.chunk.js.map": "/curriculum/static/js/787.595c645d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b5e0b3b.css",
-    "static/js/main.bb3934f4.js"
+    "static/css/main.bc7d1d04.css",
+    "static/js/main.c99e8a87.js"
   ]
 }
